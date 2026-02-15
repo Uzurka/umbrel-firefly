@@ -11,15 +11,17 @@ description: >-
 developer: Uzurka
 website: https://git.uzurka.fr
 submitter: Uzurka
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+submission: https://github.com/Uzurka/umbrel-firefly
+repo: https://github.com/Uzurka/umbrel-firefly
+support: https://github.com/Uzurka/umbrel-firefly/issues
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://cdn.uzurka.fr/firefly/screen1.png
+  - https://cdn.uzurka.fr/firefly/screen2.png
+  - https://cdn.uzurka.fr/firefly/screen3.png
+  - https://cdn.uzurka.fr/firefly/screen4.png
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  - Added missing sysctls
+  - Fix ports so the proxy can use it correctly
 dependencies: []
 path: ""
 defaultUsername: ""
