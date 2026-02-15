@@ -5,8 +5,8 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: uzurka-firefly_1
-      APP_PORT: 50121
+      APP_HOST: 127.0.0.1
+      APP_PORT: 50122
 
   server:
     image: "uusec/firefly:latest"
@@ -15,15 +15,14 @@ services:
     network_mode: host
     volumes:
       - /lib/modules:/lib/modules
-      - /home/umbrel/umbrel/app-data/firefly/data:/firefly/conf
+      - /home/umbrel/umbrel/app-data/uzurka-firefly/data:/firefly/conf
     cap_add:
       - NET_ADMIN
       - SYS_MODULE
     restart: unless-stopped
     environment:
-      #- TZ=Europe/Paris
+      - TZ=Europe/Paris
       - FIREFLY_PASSWORD=changeme
-      #- FIREFLY_AUTO_SSL=false
-      #- FIREFLY_PORT=50121
+      - FIREFLY_AUTO_SSL=false
+      - FIREFLY_PORT=50122
     user: "0:0"
-    init: true
