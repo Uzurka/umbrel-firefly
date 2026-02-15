@@ -4,7 +4,7 @@ name: Firefly
 tagline: Firefly
 icon: https://cdn.uzurka.fr/wg.svg
 category: Development
-version: "1.0.0"
+version: "1.1.0"
 port: 50121
 description: >-
   Firefly Wireguard WebUI
