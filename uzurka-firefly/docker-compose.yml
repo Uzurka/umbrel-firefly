@@ -25,5 +25,5 @@ services:
       - FIREFLY_PASSWORD=changeme
       #- FIREFLY_AUTO_SSL=false
       #- FIREFLY_PORT=50121
-    user: "1000:1000"
+    user: "0:0"
     init: true
